@@ -35,7 +35,7 @@ jobs:
         uses: docker/login-action@v1
         with:
           username: ipincogan
-          password: ${{ secrets.Ipingendut11 }}
+          password: ${{Ipingendut11}}
 
       - name: Build Docker image
         run: docker build -t ipincogan/pacmann_mlprocess_api .
